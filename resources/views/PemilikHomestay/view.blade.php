@@ -1,10 +1,10 @@
 @extends('parent')
 
 @section('main')
-
+<br />
 <div class="jumbotron text-center">
  <div align="left">
-  <a href="{{ route('data-homestay.index') }}" class="btn btn-default">Kembali</a>
+  <a href="{{ route('data-homestay.index') }}" class="btn btn-secondary">Kembali</a>
  </div>
  <br />
  <img src="{{ URL::to('/') }}/images/{{ $data->image }}" class="img-thumbnail" witdh="175px" height="125px"/>

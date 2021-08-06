@@ -12,7 +12,7 @@
 @endif
 <br />
 <div align="left">
- <a href="{{ route('data-homestay.index') }}" class="btn btn-primary">Kembali</a>
+ <a href="{{ route('data-homestay.index') }}" class="btn btn-secondary">Kembali</a>
 </div>
 <br />
  <br />

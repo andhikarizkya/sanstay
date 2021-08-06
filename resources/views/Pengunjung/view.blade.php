@@ -1,7 +1,7 @@
 @extends('parent')
 
 @section('main')
-
+<br />
 <div class="jumbotron text-center">
  <div align="left">
   <a href="{{ route('data-homestay-user.index') }}" class="btn btn-secondary">Kembali</a>

@@ -1,10 +1,10 @@
 @extends('parent')
 
 @section('main')
-
+<br />
 <div class="jumbotron text-center">
 	<div align="left">
-		<a href="{{ route('laporan.index') }}" class="btn btn-default">Kembali</a>
+		<a href="{{ route('laporan.index') }}" class="btn btn-secondary">Kembali</a>
 	</div>
 	<br />
 	<img src="{{ URL::to('/') }}/images/{{ $data->image }}" class="img-thumbnail"/>
