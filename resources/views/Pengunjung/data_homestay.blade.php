@@ -10,7 +10,7 @@
   			<p>{{ $message }}</p>
 		</div>
 		@endif
-
+		<br />
 				@foreach($data as $row)
 				<div class="col-md-4">
 				<div class="card">
@@ -29,6 +29,8 @@
   				</div>
 				</div>
 				</div>
+				<br />
+				<br />
  			@endforeach
 		{!! $data->links() !!}
 			</div>

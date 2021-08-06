@@ -29,6 +29,7 @@
 <div class="container">
     <form class="register-form" role="form" method="POST" action="{{ route('register') }}">
         @csrf
+        <br />
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-6">
@@ -38,13 +39,13 @@
         </div>
         <div class="row">
             <div class="col-md-3 field-label-responsive">
-                <label for="name">Nama</label>
+                <label for="name">Name</label>
             </div>
             <div class="col-md-6">
                 <div class="form-group row">
                     <div class="input-group mb-2 mr-sm-2 mb-sm-0">
                         <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-user"></i></div>
-                        <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus placeholder="Masukkan nama anda..">
+                        <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus placeholder="Enter your name...">
                         @error('name')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -153,10 +154,12 @@
         <div class="row">
             <div class="col-md-3 field-label-responsive"></div>
             <div class="col-md-6">
+            <div class="form-group row">
                 <button type="submit" class="btn btn-primary"><i class="fa fa-user-plus"></i>{{ __('Register') }}</button>
             </div>
         </div>
     </form>
+    <br />
 </div>
 </body>
 @endsection

@@ -1,10 +1,15 @@
 @extends('layouts.app')
 
 @section('content')
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+                <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+                <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+                <!------ Include the above in your HEAD tag ---------->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -24,16 +29,19 @@
         <div class="container">
         <form class="form-horizontal" role="form" method="POST" action="{{ route('login') }}">
             @csrf
+            <br />
             <div class="row">
                 <div class="col-md-3"></div>
                 <div class="col-md-6">
-                    <h2>Login</h2>
+                    <h2 class="text-center">Login</h2>
                     <hr>
                 </div>
             </div>
             <div class="row">
                 
-                <div class="col-md-3"></div>
+                <div class="col-md-3 field-label-responsive">
+                    <label for="name">E-Mail Address</label>
+                </div>
                 <div class="col-md-6">
                     <div class="form-group has-danger">
                         <label class="sr-only" for="email">{{ __('E-Mail Address') }}</label>
@@ -52,7 +60,9 @@
                 
             </div>
             <div class="row">
-                <div class="col-md-3"></div>
+                <div class="col-md-3 field-label-responsive">
+                    <label for="password">Password</label>
+                </div>
                 <div class="col-md-6">
                     <div class="form-group">
                         <label class="sr-only" for="password">{{ __('Password') }}</label>
@@ -87,6 +97,7 @@
                 </div>
             </div>
         </form>
+        <br />
     </div>
 </body>
 </html>

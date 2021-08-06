@@ -9871,6 +9871,17 @@ textarea.form-control {
     color: #000;
     font-style: italic; }
 
+.wrapper {
+  max-width: 50px;
+}
+
+.deskripsi {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: vertical;
+  max-width: 50px;
+}
+
 #ftco-loader {
   position: fixed;
   width: 96px;
