@@ -13,6 +13,7 @@
 		<div class="row">
 			<div class="col-12">
 				<h3 class="panel-title" align="center">Homestay yang terdata</h3>
+				<br />
 				<table class="table table-bordered table-hover">
   					<thead class="thead-dark">
  					<tr>
@@ -34,9 +35,9 @@
    							<td><center>{{ $row->no_telpon }}</center></td>
    							<td><center>Rp. {{ number_format($row->harga) }}</center></td>
    							<td><center>{{ $row->alamat }}</center></td>
-                <td><center>{{ $row->wilayah }}</center></td>
-                <td><center>{{ $row->kamar }}</center></td>
-   							<td><center>{{ $row->deskripsi }}</center></td>
+							<td><center>{{ $row->wilayah }}</center></td>
+							<td><center>{{ $row->kamar }}</center></td>
+   							<td class="deskripsi"><center>{{ $row->deskripsi }}</center></td>
 						<td><img src="{{ URL::to('/') }}/images/{{ $row->image }}" class="img-thumbnail" witdh="60px" height="60px" /></td>
 						<td>
     					<form action="{{ route('data-homestay-dinas.destroy', $row->id) }}" method="post">
