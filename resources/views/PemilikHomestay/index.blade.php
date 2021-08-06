@@ -37,9 +37,7 @@
                 <td><center>{{ $row->alamat }}</center></td>
                 <td><center>{{ $row->wilayah }}</center></td>
                 <td><center>{{ $row->kamar }}</center></td>
-                <div class="wrapper">
                 <td class="deskripsi"><center>{{ $row->deskripsi }}</center></td>
-                </div>
    <td><img src="{{ URL::to('/') }}/images/{{ $row->image }}" class="img-thumbnail" witdh="175px" height="125px" /></td>
    <td>
     <form action="{{ route('data-homestay.destroy', $row->id) }}" method="post">

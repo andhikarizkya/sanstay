@@ -9871,15 +9871,16 @@ textarea.form-control {
     color: #000;
     font-style: italic; }
 
-.wrapper {
-  max-width: 50px;
-}
-
 .deskripsi {
+  word-break: break-word;
   overflow: hidden;
-  white-space: nowrap;
-  text-overflow: vertical;
-  max-width: 50px;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 52px; /* fallback */
+  max-height: 100%; /* fallback */
+  -webkit-line-clamp: 4; /* number of lines to show */
+  -webkit-box-orient: vertical;
+
 }
 
 #ftco-loader {
